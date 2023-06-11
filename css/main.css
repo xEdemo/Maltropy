@@ -196,23 +196,3 @@ span {
     }
 
 }*/
-
-/* Read from top to bottom (the bottom most will get the attribute if 2 contradicting) */
-/* Span tags may be used to target certain words in a tag */
-/* . to call a class # to call an id */
-/* can only use 1 specific id per page but can link to ids within your own website
-(ONLY USE IDs FOR THIS REASON or if otherwise needed for JS) */
-/* A class can have multiple identifiers; ex: contact-yesorno maybe; maybe is a new
-identifer for this class, so can call .contact-yesorno or .maybe */
-/* Float puts things next to each other */
-/* smaller z-index = behind and large z-index = in front */
-/* Can have unique mouse cursor for entire website w/ cursor: */
-/* We use display: none if we want our web page to be more responive on mobile. This 
-rips out the content; use visibility: hidden if you want content to still exist */
-/* Use fit-content so that everything fits in one line */
-/* Use --these-are-words as an example to create are variable.
-Then calling this variable would look like attribute: var(--these-are-words).
-^^^^ This is useful for temporary colors and being able to quickly swap them out.
-However, if in a different class, then need to add a scope.
-To do this add a pusedo class in css called :root at the top then add --these-are-words. */
-/* margin: 50px 0 0 675px; top, right, bottom, left w/ margin and paddding */
