@@ -23,9 +23,7 @@
     border: var(--border);
     background-color: var(--red-button);
     text-align: center;
-    
     line-height: 1.55;
-    /* flex grow, shrink, and basis */
     flex: 0 0 130px;
     color: black;
 }
@@ -614,6 +612,11 @@ span.index-psw {
         border-radius: 0rem;
         top: 0px;
         transform: translateX(0%);
+    }
+
+    .index-nav button,
+    .index-nav p {
+        font-weight: 500;
     }
 
     .wrapper-main {
