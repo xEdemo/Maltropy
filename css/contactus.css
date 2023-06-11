@@ -1,0 +1,92 @@
+.contactus-transparent-box {
+    width: 95.0rem;
+    height: 60.0rem;
+    background-color: rgba(51, 46, 48, 0.75);
+    border-radius: 2.0rem;
+    border: var(--border);
+    z-index: 50;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: normal;
+    align-items: center;
+    transform: translateY(-98px);
+    padding: 2.0rem;
+}
+
+.contactus-form {
+    border: 0px;
+    padding: .2rem .5rem .5rem .5rem;
+}
+
+.contactus-form label,
+.contactus-form input,
+.contactus-form select,
+.contactus-form select option,
+.contactus-form textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+
+.contactus-form label:focus,
+.contactus-form input:focus,
+.contactus-form select:focus,
+.contactus-form textarea:focus {
+    outline: var(--outline);
+}
+
+option {
+    background-color: rgb(29, 29, 29);
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[class=contactus-uname],
+input[class=contactus-uemail], 
+select, 
+textarea {
+    width: 100%; /* Full width */
+    padding: 1.2rem; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: .4rem; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: .6rem; /* Add a top margin */
+    margin-bottom: 1.6rem; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    max-height: 16.5rem;
+}
+  
+/* Style the submit button with a specific background color etc */
+.contactus-submit {
+    background-color: #04AA6D;
+    color: whitesmoke;
+    padding: 1.2rem 2.0rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+  
+/* When moving the mouse over the submit button, add a darker green color */
+.contactus-submit:hover {
+    background-color: #45a049;
+}
+
+/* Mobile Version (portrait) */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+    .contactus-transparent-box {
+        width: 35.0rem;
+        transform: translateY(-90px);
+        padding: 1.0rem;
+    }
+    
+}
+
+/* Mobile Version (landscape) */
+@media only screen and (max-width: 950px) and (orientation: landscape) {
+
+    .contactus-transparent-box {
+        width: 65.0rem;
+    }
+}

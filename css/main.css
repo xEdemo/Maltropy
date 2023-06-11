@@ -1,0 +1,218 @@
+:root {
+    --red-button: #cc1d0698;
+    --button-hover: #FFFFFF;
+    --border: #000 solid 3px;
+    --outline: rgb(209, 209, 209) solid 1.5px;
+    font-size: 62.5%;
+}
+
+
+input[type="checkbox"] {
+    appearance: checkbox;
+}
+
+input[type="radio"] {
+    appearance: radio;
+}
+
+@font-face {
+    font-family: UnifrakturCook-bold;
+    src: url(../fonts/UnifrakturCook-Bold.ttf);
+}
+
+body {
+    background-color: #2c2c2c;
+}
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/facebook-color.png), url(../img/instagram-color.png), url(../img/discord-color.png);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1.2rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background: #222222;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #555;
+  }
+
+.wrapper-main {
+    width: 110.0rem;
+    margin: 0 auto;
+}
+
+a {
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 3rem;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    line-height: 1.75;
+    font-weight: 500;
+}
+
+h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    line-height: 1.75;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    line-height: 1.75;
+    font-weight: 100;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    line-height: 1.75;
+    font-weight: 100;
+}
+
+/*@media only screen and (min-width: 601px) {
+
+    .wrapper-main {
+        width: 100%;
+    }
+
+}*/
+
+/*@media only screen and (min-width: 768px) {
+
+    .wrapper-main {
+        width: 100%;
+    }
+
+}*/
+
+/*@media only screen and (min-width: 950px) {
+
+    .wrapper-main {
+        width: 100%;
+    }
+
+}*/
+
+/*@media only screen and (min-width: 992px) {
+
+    .wrapper-main {
+        width: 100%;
+    }
+
+}*/
+
+/*@media only screen and (min-width: 1200px) {
+
+    .wrapper-main {
+        width: 100%;
+    }
+
+}*/
+
+/* Read from top to bottom (the bottom most will get the attribute if 2 contradicting) */
+/* Span tags may be used to target certain words in a tag */
+/* . to call a class # to call an id */
+/* can only use 1 specific id per page but can link to ids within your own website
+(ONLY USE IDs FOR THIS REASON or if otherwise needed for JS) */
+/* A class can have multiple identifiers; ex: contact-yesorno maybe; maybe is a new
+identifer for this class, so can call .contact-yesorno or .maybe */
+/* Float puts things next to each other */
+/* smaller z-index = behind and large z-index = in front */
+/* Can have unique mouse cursor for entire website w/ cursor: */
+/* We use display: none if we want our web page to be more responive on mobile. This 
+rips out the content; use visibility: hidden if you want content to still exist */
+/* Use fit-content so that everything fits in one line */
+/* Use --these-are-words as an example to create are variable.
+Then calling this variable would look like attribute: var(--these-are-words).
+^^^^ This is useful for temporary colors and being able to quickly swap them out.
+However, if in a different class, then need to add a scope.
+To do this add a pusedo class in css called :root at the top then add --these-are-words. */
+/* margin: 50px 0 0 675px; top, right, bottom, left w/ margin and paddding */

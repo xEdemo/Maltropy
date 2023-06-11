@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free-to-play text-based MMORPG">
+    <meta name="keywords" content="HTML, CSS, Javascript, MMORPG, text-based, free-to-play">
+    <title>Maltropy</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/site.webmanifest">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    
+    <!-- Burger Menu -->
+    <nav class="burger-menu">
+        <div>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#">Leaderboards</a></p>
+            <p><a href="#">Forum</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <p><a target="_blank" href="signup.html">Sign Up</a></p>
+            <p><button class="burger-menu-login" onclick="document.getElementById('id01').style.display='block'">Login</button></p>
+        </div>
+    </nav>
+    <!-- Burger Menu Stop-->
+
+    <header>  
+        <nav class="index-nav">
+            <p><a href="index.html">Home</a></p>
+            <div class="index-dropdown">
+                <p class="index-dropbtn"><a href="#">Leaderboards</a></p>
+                <div class="index-dropdown-content">
+                    <a href="#">Boss Kills</a>
+                    <a href="#">Player Kills</a>
+                    <a href="#">Skill 1</a>
+                    <a href="#">Skill 2</a>
+                    <a href="#">Skill 3</a>
+                    <a href="#">Skill 4</a>
+                    <a href="#">Skill 5</a>
+                    <a href="#">Skill 6</a>
+                    <a href="#">Skill 7</a>
+                    <a href="#">Skill 8</a>
+                    <a href="#">Skill 9</a>
+                </div>
+            </div>
+            <p><a href="#">Forum</a></p>
+            <p><a target="_blank" href="contactus.html">Contact Us</a></p>
+            <p><a target="_blank" href="signup.html">Sign Up</a></p>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <div class="burger-menu-btn"></div>
+        </nav>
+    </header>
+
+    <!-- The Modal -->
+    <div id="id01" class="index-modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="index-closebtn" title="Close Modal">&times;</span>
+  
+        <!-- Modal Content -->
+        <form class="index-modal-content index-animate" action="/action_page.php">
+            <div class="index-imgcontainer">
+                <img src="img/temp-logo.png" alt="Maltropy logo" class="index-img">
+            </div>
+  
+            <div class="index-containers">
+                <label for="uname"><b>Username</b></label>
+                <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input id="psw" type="password" placeholder="Enter Password" name="psw" required maxlength="24">
+                <button class="index-loginbtn" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+            </div>
+  
+            <div class="index-containers" style="background-color:rgb(29, 29, 29)">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="index-cancelbtn">Cancel</button>
+                <span class="index-psw"><a href="#" style="text-decoration: underline;">Forgot Password</a>?</span>
+            </div>
+        </form>
+    </div>
+
+    <main class="index-main">
+        <div class="wrapper-main index-main-flex">
+            <canvas class="index-logo" title="Roonie was here"></canvas>
+            <em class="index-phrase">A Text-Based MMORPG</em>
+            <div class="index-transparent-box">
+                <div class="index-box-title1">
+                    <h3>About Maltropy</h3>
+                </div>
+                <div class="index-box-title2">
+                    <h3>Recent Patch Notes</h3>
+                </div>
+                <div class="index-box-title3">
+                    <h3>... And More</h3>
+                </div>
+                <div class="index-textbox1">
+                    <h1>Maltropy is a completely free-to-play, text-based MMORPG.</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="index-textbox2">
+                    <p>For archived patch notes, click <a target="_blank" href="#" style="text-decoration: underline;">here</a>.<br><br>0.0.2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>0.0.1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="index-textbox3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="index-footer">
+        <div class="wrapper-main index-footer-flex">
+            <div class="index-footer-left">
+                <div class="index-footer-reit">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="#">Leaderboards</a></p>
+                    <p><a href="#">Forum</a></p>
+                    <p><a target="_blank" href="contactus.html">Contact Us</a></p>
+                    <p><a target="_blank" href="signup.html">Sign Up</a></p>
+                </div>
+
+                <div class="index-footer-important">
+                    <p><a href="privacy.html">Privacy</a></p>
+                    <p><a href="#">Terms and Conditions</a></p>
+                    <p><a href="#">Rules</a></p>
+                    <p><a href="#">Cookie Policy</a></p>
+                </div>
+
+                <div class="index-copy">
+                    <p>Maltropy © 2023</p>
+                </div>
+            </div>
+            <div class="index-footer-sm">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><div class="index-footer-fb"></div></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><div class="index-footer-in"></div></a>
+                <a href="https://www.discord.com" target="_blank" title="Discord"><div class="index-footer-dis"></div></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/burger-menu.js"></script>
+
+</body>
+
+</html>
+
+<!--<aside> may be used for hamburger drop down (for side information)-->
+<!--<main> is used for main content, whereas <section> is content related to that specific page but less improtant than main content that the user visits the page for-->
+<!--div tags describe nothing but make it easier to contribute styles to elements. Use these sparingly-->
+<!--<footer> goes at the body of the website (such as copyright or cite maps)
+    <img class="index-logo" src="img/Temp-logo.png" alt="Maltropy">-->

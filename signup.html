@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for Maltropy!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/site.webmanifest">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+
+    <!-- Burger Menu -->
+    <nav class="burger-menu">
+        <div>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#">Leaderboards</a></p>
+            <p><a href="#">Forum</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <p><a target="_blank" href="signup.html">Sign Up</a></p>
+            <p><button class="burger-menu-login" onclick="document.getElementById('id01').style.display='block'">Login</button></p>
+        </div>
+    </nav>
+    <!-- Burger Menu Stop-->
+
+    <header>  
+        <nav class="index-nav">
+            <p><a href="index.html">Home</a></p>
+            <div class="index-dropdown">
+                <p class="index-dropbtn"><a href="#">Leaderboards</a></p>
+                <div class="index-dropdown-content">
+                    <a href="#">Boss Kills</a>
+                    <a href="#">Player Kills</a>
+                    <a href="#">Skill 1</a>
+                    <a href="#">Skill 2</a>
+                    <a href="#">Skill 3</a>
+                    <a href="#">Skill 4</a>
+                    <a href="#">Skill 5</a>
+                    <a href="#">Skill 6</a>
+                    <a href="#">Skill 7</a>
+                    <a href="#">Skill 8</a>
+                    <a href="#">Skill 9</a>
+                </div>
+            </div>
+            <p><a href="#">Forum</a></p>
+            <p><a target="_blank" href="contactus.html">Contact Us</a></p>
+            <p><a href="signup.html">Sign Up</a></p>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <div class="burger-menu-btn"></div>
+        </nav>
+    </header>
+
+    <!-- The Modal -->
+    <div id="id01" class="index-modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="index-closebtn" title="Close Modal">&times;</span>
+  
+        <!-- Modal Content -->
+        <form class="index-modal-content index-animate" action="/action_page.php">
+            <div class="index-imgcontainer">
+                <img src="img/temp-logo.png" alt="Maltropy logo" class="index-img">
+            </div>
+  
+            <div class="index-containers">
+                <label for="uname"><b>Username</b></label>
+                <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input id="psw" type="password" placeholder="Enter Password" name="psw" required maxlength="24">
+                <button class="index-loginbtn" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+            </div>
+  
+            <div class="index-containers" style="background-color:rgb(29, 29, 29)">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="index-cancelbtn">Cancel</button>
+                <span class="index-psw"><a href="#" style="text-decoration: underline;">Forgot Password</a>?</span>
+            </div>
+        </form>
+    </div>
+    
+    <main class="index-main">
+        <div class="wrapper-main index-main-flex">
+            <canvas class="index-logo"></canvas>
+            <em class="index-phrase">A Text-Based MMORPG</em>
+            <div class="signup-transparent-box">
+                <div class="signup-box-upper">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quae officia aut laboriosam dolor, velit, doloribus quod iste et beatae eligendi at ea repellat. Similique iure fuga corporis atque mollitia!</p>
+                </div>
+                <form action="action_page.php" method="post" class="signup-box-lower">
+                    <label for="signup-uname">Username:</label>
+                    <input id="signup-uname" type="text" class="signup-input" placeholder="Enter Username" name="signup-username" required>
+                    <label for="signup-uemail">Email:</label>
+                    <input id="signup-uemail" type="email" class="signup-input" placeholder="Enter Email" name="signup-useremail" required>
+                    <label for="signup-psw">Password:</label>
+                    <input id="signup-psw" type="password" class="signup-input" placeholder="Enter Password" name="signup-psw" required maxlength="24">
+                    <label for="signup-cpsw">Confirm Password:</label>
+                    <input id="signup-cpsw" type="password" class="signup-input" placeholder="Confirm Password" name="signup-cpsw" required maxlength="24">
+                    <label>Remember me
+                        <input type="checkbox" checked="checked" value="Remember-Me" name="remember" required>
+                    </label>
+                    <label>Do you understand the <a href="#" style="text-decoration: underline;">Rules</a> and <a href="#" style="text-decoration: underline;">Terms and Conditions</a>?:
+                        <input type="checkbox" value="Understand" name="understand" required>
+                    </label>
+                    <button class="signup-submit" value="submit" type="submit">Submit</button>  
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="index-footer">
+        <div class="wrapper-main index-footer-flex">
+            <div class="index-footer-left">
+                <div class="index-footer-reit">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="#">Leaderboards</a></p>
+                    <p><a href="#">Forum</a></p>
+                    <p><a target="_blank" href="contactus.html">Contact Us</a></p>
+                    <p><a href="signup.html">Sign Up</a></p>
+                </div>
+                <div class="index-footer-important">
+                    <p><a href="#">Privacy</a></p>
+                    <p><a href="#">Terms and Conditions</a></p>
+                    <p><a href="#">Rules</a></p>
+                    <p><a href="#">Cookie Policy</a></p>
+                </div>
+                <div class="index-copy">
+                    <p>Maltropy © 2023</p>
+                </div>
+            </div>
+            <div class="index-footer-sm">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><div class="index-footer-fb"></div></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><div class="index-footer-in"></div></a>
+                <a href="https://www.discord.com" target="_blank" title="Discord"><div class="index-footer-dis"></div></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/burger-menu.js"></script>
+
+</body>
+</html>
